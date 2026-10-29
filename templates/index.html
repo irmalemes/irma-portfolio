@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Irma Lemeš | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <div class="animated-background" aria-hidden="true">
+    <svg viewBox="0 0 1440 900"
+         preserveAspectRatio="xMidYMid slice">
+        <g id="wave-lines"></g>
+    </svg>
+</div>
+
+    <header>
+        
+<nav class="navbar">
+    
+<button type="button" class="nav-logo terminal-trigger"
+        id="open-terminal"
+        aria-label="Open terminal">
+    &gt;
+</button>
+
+
+    <div class="nav-links">
+        <a href="#home" class="active">home</a>
+        <a href="#about">about-me</a>
+        <a href="#skills">skills</a>
+        <a href="#experience">experience</a>
+        <a href="#projects">projects</a>
+        <a href="#contacts">contacts</a>
+    </div>
+</nav>
+
+    </header>
+
+    <main id="home">
+        <section>
+
+            <h1>Irma Lemeš</h1>
+
+            
+<div class="typing-container">
+    <p class="typing-text">
+        <span id="typing-text"></span><span class="cursor">|</span>
+    </p>
+</div>
+
+<div class="social-links">
+    <a href="https://www.linkedin.com/in/irma-leme%C5%A1-943308401"
+       target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-linkedin"></i>
+        LinkedIn
+    </a>
+
+    <a href="https://github.com/irmalemes"
+       target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-github"></i>
+        GitHub
+    </a>
+
+    
+<a href="{{ url_for('static', filename='files/Irma_Lemes_CV.pdf') }}"
+   download="Irma_Lemes_CV.pdf">
+    <i class="fa-solid fa-file-arrow-down"></i>
+    CV
+</a>
+
+</div>
+
+        </section>
+
+        <section class="avatar-section">
+                <img
+            id="avatar"
+            src="{{ url_for('static', filename='images/avatar.png') }}"
+            data-open="{{ url_for('static', filename='images/avatar.png') }}"
+            data-closed="{{ url_for('static', filename='images/avatar-closed.png') }}"
+            alt="Animated pixel-art avatar of Irma"
+            class="avatar"
+        >
+        </section>
+    </main>
+
+
+
+    
+<!-- ===== ABOUT ME SECTION ===== -->
+
+<section id="about" class="about-section">
+    <div class="section-container">
+
+        <h2 class="section-title">
+            <span class="section-arrow">&gt;</span>
+            about-me
+        </h2>
+
+        <div class="about-content">
+
+            <p>Hello, I'm Irma!</p>
+
+            <p>
+                I'm a Software Developer and MSc student in
+                Computer Science and Informatics at the Faculty of Electrical Engineering,
+                University of Sarajevo. I enjoy turning ideas
+                into working software and finding creative ways
+                to solve real-world problems.
+            </p>
+
+            <p>
+                I'm particularly interested in software engineering,
+                modern C++, backend development, automation, and
+                exploring how AI can improve the way we build software.
+                I love learning new technologies, understanding how
+                things work behind the scenes, and challenging myself
+                with new projects.
+            </p>
+
+            <p>
+                During my internship, I developed a
+                desktop application that is now used within the
+                company. Alongside that experience, I've worked
+                on web, mobile, and team-based academic projects,
+                gaining experience with different technologies
+                and approaches to software development.
+            </p>
+
+            <p>
+                What motivates me most is the opportunity to keep
+                learning, build things that are genuinely useful,
+                and grow as a developer.
+            </p>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- ===== SKILLS SECTION ===== -->
+
+<section id="skills" class="skills-section">
+    <div class="section-container">
+
+        <h2 class="section-title">
+            <span class="section-arrow">&gt;</span>
+            skills
+        </h2>
+
+        <div class="skills-grid">
+
+            <!-- PROGRAMMING LANGUAGES -->
+            <div class="skill-category">
+                <h3>Programming Languages</h3>
+                <div class="skill-items">
+                    <span>C</span>
+                    <span>C++</span>
+                    <span>C#</span>
+                    <span>Python</span>
+                    <span>Java</span>
+                    <span>Kotlin</span>
+                    <span>JavaScript</span>
+                </div>
+            </div>
+
+            <!-- FRAMEWORKS -->
+            <div class="skill-category">
+                <h3>Frameworks &amp; Technologies</h3>
+                <div class="skill-items">
+                    <span>.NET</span>
+                    <span>Qt</span>
+                    <span>Node.js</span>
+                    <span>Android</span>
+                </div>
+            </div>
+
+            <!-- DATABASES -->
+            <div class="skill-category">
+                <h3>Databases &amp; Backend</h3>
+                <div class="skill-items">
+                    <span>SQL</span>
+                    <span>MySQL</span>
+                    <span>SQLite</span>
+                    <span>Supabase</span>
+                </div>
+            </div>
+
+            <!-- SOFTWARE ENGINEERING -->
+            <div class="skill-category">
+                <h3>Software Engineering</h3>
+                <div class="skill-items">
+                    <span>OOP</span>
+                    <span>Generic Programming</span>
+                    <span>C++20 Concepts</span>
+                    <span>Agile / Scrum</span>
+                    <span>Software Testing</span>
+                    <span>Requirements Analysis</span>
+                </div>
+            </div>
+
+            <!-- DEVOPS -->
+            <div class="skill-category">
+                <h3>DevOps &amp; Infrastructure</h3>
+                <div class="skill-items">
+                    <span>Docker</span>
+                    <span>Terraform</span>
+                    <span>Git</span>
+                </div>
+            </div>
+
+            <!-- DEVELOPER TOOLS -->
+            <div class="skill-category">
+                <h3>Developer &amp; Other Tools</h3>
+                <div class="skill-items">
+                    <span>GitHub</span>
+                    <span>GitLab</span>
+                    <span>Bitbucket</span>
+                    <span>Azure DevOps</span>
+                    <span>Visual Studio</span>
+                    <span>VS Code</span>
+                    <span>Android Studio</span>
+                    <span>SharePoint</span>
+                    <span>LaTeX</span>
+                    <span>Overleaf</span>
+                    <span>Blender</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<!-- ===== EXPERIENCE SECTION ===== -->
+
+<section id="experience" class="experience-section">
+    <div class="section-container">
+
+        <h2 class="section-title">
+            <span class="section-arrow">&gt;</span>
+            experience
+        </h2>
+
+        <div class="experience-grid">
+
+            <div class="experience-entry">
+
+                <p class="experience-period">
+                    SEP 2026 - OCT 2026
+                </p>
+
+                <h3 class="experience-company-name">
+                    ERC ZIPO d.o.o. Sarajevo
+                </h3>
+
+                <p class="experience-role">
+                    Software Development Intern
+                </p>
+
+                <ul class="experience-list">
+                    <li>
+                        Developed a C++ and Qt desktop application
+                        for managing recurring business reports.
+                    </li>
+
+                    <li>
+                        Implemented automatic report classification,
+                        file organization, and SQLite-based
+                        metadata management.
+                    </li>
+
+                    <li>
+                        Automated missing-report tracking,
+                        reminders, and report-related notifications.
+                    </li>
+
+                    <li>
+                        Delivered a software solution that is
+                        currently used within the company.
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- ===== PROJECTS SECTION ===== -->
+
+<section id="projects" class="projects-section">
+    <div class="section-container">
+
+        <h2 class="section-title">
+            <span class="section-arrow">&gt;</span>
+            projects
+        </h2>
+
+        <div class="projects-grid">
+
+            <article class="project-card">
+                <img src="{{ url_for('static', filename='images/erc-zipo.png') }}"
+                     alt="Report Inventory System screenshot"
+                     class="project-image">
+
+                <h3>
+                    Report Inventory System
+                    <a href="https://github.com/irmalemes/ERC-ZIPO---Report-Inventory-System"
+                       target="_blank" rel="noopener noreferrer"
+                       aria-label="Report Inventory System GitHub">
+                        ↗
+                    </a>
+                </h3>
+
+                <p>
+                    A C++ and Qt desktop application that automates
+                    recurring report management, file organization,
+                    and missing-report tracking. Developed during
+                    my internship and currently used at ERC ZIPO.
+                </p>
+            </article>
+
+            <article class="project-card">
+                <img src="{{ url_for('static', filename='images/scenarijpro.png') }}"
+                     alt="ScenarijPro screenshot"
+                     class="project-image">
+
+                <h3>
+                    ScenarijPro
+                    <a href="https://github.com/irmalemes/ScenarijPro"
+                       target="_blank" rel="noopener noreferrer"
+                       aria-label="ScenarijPro GitHub">
+                        ↗
+                    </a>
+                </h3>
+
+                <p>
+                    A web application built using JavaScript,
+                    Node.js, MySQL, and Docker, with backend
+                    functionality and database integration.
+                </p>
+            </article>
+
+            <article class="project-card">
+                <img src="{{ url_for('static', filename='images/newsfeedapp.png') }}"
+                     alt="NewsFeedApp screenshot"
+                     class="project-image">
+
+                <h3>
+                    NewsFeedApp
+                    <a href="https://github.com/irmalemes/NewsFeedApp"
+                       target="_blank" rel="noopener noreferrer"
+                       aria-label="NewsFeedApp GitHub">
+                        ↗
+                    </a>
+                </h3>
+
+                <p>
+                    An Android news application developed in Kotlin,
+                    integrating an external API to retrieve and
+                    display news content.
+                </p>
+            </article>
+
+            <article class="project-card">
+                <img src="{{ url_for('static', filename='images/filmmate.png') }}"
+                     alt="FilmMate screenshot"
+                     class="project-image">
+
+                <h3>
+                    FilmMate
+                    <a href="https://github.com/irmalemes/FilmMate"
+                       target="_blank" rel="noopener noreferrer"
+                       aria-label="FilmMate GitHub">
+                        ↗
+                    </a>
+                </h3>
+
+                <p>
+                    A C#/.NET application developed as part of
+                    Software Verification and Validation, focusing
+                    on software quality and testing.
+                </p>
+            </article>
+
+            <article class="project-card">
+                <img src="{{ url_for('static', filename='images/yourride.png') }}"
+                     alt="YourRide project screenshot"
+                     class="project-image">
+
+                <h3>
+                    YourRide
+                    <a href="https://github.com/irmalemes/YourRide"
+                       target="_blank" rel="noopener noreferrer"
+                       aria-label="YourRide GitHub">
+                        ↗
+                    </a>
+                </h3>
+
+                <p>
+                    A team-based academic project exploring
+                    object-oriented analysis, software design,
+                    and collaborative development.
+                </p>
+            </article>
+
+            <article class="project-card">
+                <img src="{{ url_for('static', filename='images/praksahub.png') }}"
+                     alt="PraksaHub project screenshot"
+                     class="project-image">
+
+                <h3>
+                    PraksaHub
+                    <a href="https://github.com/irmalemes/PraksaHub"
+                       target="_blank" rel="noopener noreferrer"
+                       aria-label="PraksaHub GitHub">
+                        ↗
+                    </a>
+                </h3>
+
+                <p>
+                    A collaborative software engineering project
+                    focused on requirements analysis, teamwork,
+                    and application development.
+                </p>
+            </article>
+
+        </div>
+
+        <div class="projects-footer">
+            <a href="https://github.com/irmalemes"
+               target="_blank" rel="noopener noreferrer">
+                View all projects on GitHub ↗
+            </a>
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- ===== CONTACTS SECTION ===== -->
+
+<section id="contacts" class="contacts-section">
+    <div class="section-container">
+
+        <h2 class="section-title">
+            <span class="section-arrow">&gt;</span>
+            contacts
+        </h2>
+
+        <div class="contact-form-wrapper">
+
+            <h3 class="contact-heading">
+                <span>✉</span> Message me here
+            </h3>
+
+            <form id="contact-form">
+
+                <input type="text"
+                       name="name"
+                       placeholder="Your Name"
+                       required>
+
+                <input type="email"
+                       name="email"
+                       placeholder="Your Email"
+                       required>
+
+                <textarea name="message"
+                          placeholder="Your Message"
+                          rows="6"
+                          required></textarea>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+    </div>
+</section>
+
+<footer class="portfolio-footer">
+    <p>made with 💜 by Irma</p>
+
+    <div class="footer-links">
+        <a href="https://github.com/irmalemes"
+           target="_blank" rel="noopener noreferrer">
+            GitHub
+        </a>
+
+        <a href="https://www.linkedin.com/in/irma-leme%C5%A1-943308401"
+           target="_blank" rel="noopener noreferrer">
+            LinkedIn
+        </a>
+    </div>
+</footer>
+
+
+
+
+    
+<!-- ===== INTERACTIVE TERMINAL ===== -->
+
+<div class="terminal-overlay" id="terminal-overlay">
+    <div class="terminal-window"
+         role="dialog"
+         aria-modal="true"
+         aria-label="Portfolio terminal">
+
+        <div class="terminal-header">
+            <div class="terminal-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+            </div>
+
+            <span class="terminal-title">
+                irma@portfolio:~
+            </span>
+
+            <button class="terminal-close"
+                    id="close-terminal"
+                    aria-label="Close terminal">
+                &times;
+            </button>
+        </div>
+
+        <div class="terminal-body" id="terminal-body">
+            <p class="terminal-hint">
+                type 'help' to see available commands
+            </p>
+
+            <div id="terminal-output"></div>
+
+            <div class="terminal-input-line">
+                <span class="terminal-prompt">&gt;</span>
+
+                <input type="text"
+                       id="terminal-input"
+                       autocomplete="off"
+                       spellcheck="false"
+                       aria-label="Terminal command">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
